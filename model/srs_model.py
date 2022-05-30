@@ -6,7 +6,7 @@ from keras import backend as K
 from model.masklayers import DropMask, MultiMask
 
 
-class NetworkRS(object):
+class RS_Network(object):
     def __init__(self,
                  user_size, item_size, embed_len, score_model,
                  first_dims=1, second_dims=1, embed_regularizer=None, directed=False,
