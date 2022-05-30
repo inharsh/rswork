@@ -33,7 +33,7 @@ def nn_scoremodel(input_shape, edge_rep_len, dropout=0,
     return Model(inputs=[from_node, to_node], outputs=score, name='score_model')
 
 
-def inner_prod_scoremodel(input_shape, score_rep_norm=False, score_act=None):
+def modelscore(input_shape, score_rep_norm=False, score_act=None):
     from_node = Input(shape=input_shape)
     to_node = Input(shape=input_shape)
 
